@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Marks Grade System</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <style>
+        #appDiv {
+            box-shadow: 0px 2px 10px 3px #000;
+        }
+        
+        .btn_shadow {
+            box-shadow: 0px 0px 7px 0px #fff0ff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="text-center bg-primary py-3 text-white mb-5">JavaScript If else Made Exam Marks Grade System</h1>
+
+    <div class="btn-div text-center mb-5">
+
+        <div class="w-50 bg-secondary mx-auto p-3 rounded" id="appDiv">
+
+            <h3 class="text-white mb-4">Get Your Result</h3>
+
+            <form>
+                <input type="number" id="ban" placeholder="Enter Your Bangla Marks" class="form-control mb-3">
+                <input type="number" id="eng" placeholder="Enter Your English Marks" class="form-control mb-3">
+                <input type="number" id="mat" placeholder="Enter Your Math Marks" class="form-control mb-3">
+                <input type="number" id="sci" placeholder="Enter Your Science Marks" class="form-control mb-3">
+                <input type="number" id="his" placeholder="Enter Your History Marks" class="form-control mb-3">
+
+                <p id="err-msg" class="bg-warning text-danger"></p>
+                <p id="err-msg2" class="bg-info text-danger"></p>
+                <p id="err-msg3" class="bg-light text-danger"></p>
+
+                <button type="button" class="btn btn-success fw-bold btn_shadow" id="res-btn">Get Result</button>
+
+                <button type="reset" class="btn btn-danger fw-bold btn_shadow">Reset</button>
+
+                <button onclick="window.location.reload();" class="btn btn-primary fw-bold btn_shadow">Reload Page</button>
+            </form>
+
+        </div>
+
+        <div class="text-start bg-success mt-5 p-4 text-warning rounded">
+
+            <div class="text-end">
+                <a href="print.html" class="btn btn-primary fw-bold mb-3 shadow">Print</a>
+            </div>
+
+            <h5>Grade : <span id="grade" class="text-light"></span> </h5>
+            <h5>Your Total Marks : <span id="t_marks" class="text-light"></span> </h5>
+            <h5>Out of Total Exam Marks : <span id="full_exam_marks" class="text-light"></span> </h5>
+            <h5 id="fail_res" class="text-light text-center"></h5>
+
+        </div>
+
+    </div>
+    <div class="msg">
+        <h4 class="text-center" id="voteMsg"></h4>
+    </div>
+
+
+
+
+
+    <script src="app3.js"></script>
+</body>
+
+</html>
